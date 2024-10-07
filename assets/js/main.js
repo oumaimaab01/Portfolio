@@ -89,14 +89,38 @@
     onscroll(document, toggleBacktotop)
   }
 
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('body').classList.toggle('mobile-nav-active')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+  const body = document.querySelector('body');
+
+  // Fonction pour basculer la classe mobile-nav-active sur mobile
+  function toggleMobileNav() {
+    body.classList.toggle('mobile-nav-active');
+    mobileNavToggle.classList.toggle('bi-list');
+    mobileNavToggle.classList.toggle('bi-x');
+  }
+
+  // Vérification : Ne basculer que si l'écran est inférieur ou égal à 1024px
+  mobileNavToggle.addEventListener('click', function(e) {
+    if (window.innerWidth <= 1024) {
+      toggleMobileNav();
+    }
+  });
+
+  // Réinitialiser le menu mobile lorsque l'écran est redimensionné au-dessus de 1024px
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 1024) {
+      body.classList.remove('mobile-nav-active');  // Enlever la classe mobile-active si l'écran est grand
+      mobileNavToggle.classList.add('bi-list');
+      mobileNavToggle.classList.remove('bi-x');
+    }
+  });
+
+  // Lors du chargement initial, assurer que le menu fonctionne en fonction de la taille de l'écran
+  if (window.innerWidth > 1024) {
+    body.classList.remove('mobile-nav-active');
+  }
+});
 
   /**
    * Scrool with ofset on links with a class name .scrollto

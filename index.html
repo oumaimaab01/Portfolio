@@ -54,7 +54,6 @@
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Welcome</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#album" class="nav-link scrollto"><i class="bx bxs-photo-album"></i> <span>Echoes of Life</span></a></li>
           <li><a href="#Compétences" class="nav-link scrollto"><i class="bx bx-star"></i> <span>Skills</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li><a href="#projets" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
@@ -126,43 +125,6 @@
       </div>
     </section><!-- End About Section -->
 
-<!-- ======= Album Section ======= -->
-<section id="album" class="album">
-  <div class="container">
-    <div class="section-title">
-      <h2>Echoes of Life: A Symphony in Images</h2>
-    </div>
-
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        
-        <div class="swiper-slide">
-          <img src="assets/img/album/29a40f0e-c7a0-4c4d-a95d-76c1bdb46945.jpg" alt="Photo 4">
-          <img src="assets/img/album/a3e48ca4-d0b1-494a-a2e8-9fc5842a3edc.jpg" alt="Photo 14">
-          <img src="assets/img/album/6e1a7065-857a-430a-9210-9aff9b8dc775.jpg" alt="Photo 8">
-        </div>
-        
-    
-        <div class="swiper-slide">
-          <img src="assets/img/album/a15162d0-bbc2-48df-a7f0-70dc83399671.jpg" alt="Photo 13">
-          <img src="assets/img/album/1df9f194-75a1-4ada-b3f9-984fa016b7d7.jpg" alt="Photo 2">
-          <img src="assets/img/album/300d532c-8560-46ea-9d50-d99a589cf976.jpg" alt="Photo 14">
-
-        </div>
-        
-        <div class="swiper-slide">
-          <img src="assets/img/album/fd560f21-3ca9-4fdf-95c3-123e210ff616.jpg" alt="Photo 18">
-          <img src="assets/img/album/sof.jfif" alt="Photo 20">
-          <img src="assets/img/album/169bd379-78c4-4883-93df-11579ac90edb.jpg" alt="Photo 19">
-
-        </div>
-      </div>
-
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-</section><!-- End Album Section -->
 
 <section id="Compétences" class="skills section-bg">
   <div class="container category-container" data-aos="zoom-out">
@@ -193,15 +155,17 @@
       <h5>Libraries/Frameworks</h5>
       <div class="clients-list">
         <img src="assets/img/clients/numpy.png" class="img-fluid" alt="">
-        <img src="assets/img/clients/pandas.png" class="img-fluid" alt="">
+        <img src="assets/img/clients/pandas.png" class="img-fluid" style="width: 70px; height: auto;" alt="">
         <img src="assets/img/clients/matplotlib.png" class="img-fluid" alt="">
         <img src="assets/img/clients/Seaborn.png" class="img-fluid" alt="">
         <img src="assets/img/clients/TensorFlow-removebg-preview.png" class="img-fluid" alt="">
-        <img src="assets/img/clients/PyTorch.png" class="img-fluid" alt="">
+        <img src="assets/img/clients/PyTorch.png" class="img-fluid" style="width: 70px; height: auto;" alt="">
         <img src="assets/img/clients/Scikit-learn.png" class="img-fluid" alt="">
         <img src="assets/img/clients/XGBoost.png" class="img-fluid" alt="">
-        <img src="assets/img/clients/LightGBM.png" class="img-fluid" alt="">
-        <img src="assets/img/clients/catboost.png" class="img-fluid" alt="">
+        <img src="assets/img/clients/LightGBM.png" class="img-fluid" style="width: 70px; height: auto;" alt="">
+        <img src="assets/img/clients/catboost.png" class="img-fluid" style="width: 70px; height: auto;" alt="">
+        <img src="assets/img/clients/fastapi.png" class="img-fluid" style="width: 70px; height: auto;" alt="">
+
 
       </div>
     </div>
@@ -214,19 +178,9 @@
         <img src="assets/img/clients/MYSQL-removebg-preview.png" class="img-fluid" alt="">
         <img src="assets/img/clients/PostgreSQL-removebg-preview.png" class="img-fluid" alt="">
         <img src="assets/img/clients/Oracle.png" class="img-fluid" alt="">
-        <img src="assets/img/clients/NoSQL.png" class="img-fluid" alt="">
+        <img src="assets/img/clients/NoSQL.png" class="img-fluid" style="width: 70px; height: auto;" alt="">
       </div>
     </div>
-
-        <!-- Catégorie : Reporting Tools -->
-        <div class="category-box">
-          <h5>Reporting/Visualization</h5>
-          <div class="clients-list">
-            <img src="assets/img/clients/Microsoft-Power-BI-Logo-650x366.png" class="img-fluid" style="width: 70px; height: auto;" alt="">
-        <img src="assets/img/clients/tab.png" class="img-fluid" style="width: 70px; height: auto;" alt="">
-          </div>
-        </div>
-
     <!-- Catégorie : Data Integration -->
     <div class="category-box">
       <h5>Data Integration</h5>
@@ -239,10 +193,32 @@
       </div>
     </div>
 
-    <!-- Catégorie : Others -->
+        <!-- Catégorie : Reporting Tools -->
+        <div class="category-box">
+          <h5>Reporting/Visualization</h5>
+          <div class="clients-list">
+            <img src="assets/img/clients/Microsoft-Power-BI-Logo-650x366.png" class="img-fluid" style="width: 70px; height: auto;" alt="">
+        <img src="assets/img/clients/tab.png" class="img-fluid" style="width: 70px; height: auto;" alt="">
+          </div>
+        </div>
+
+
+
+
+        <!-- Catégorie : Web Scraping -->
+        <div class="category-box">
+          <h5>Web Scraping</h5>
+          <div class="clients-list">
+            <img src="assets/img/clients/beautifulsoup-logo.png" class="img-fluid" style="width: 70px; height: auto;" alt="">
+            <img src="assets/img/clients/Selenium_Logo.png" class="img-fluid" alt="">
+          </div>
+        </div>
+
+            <!-- Catégorie : Others -->
     <div class="category-box">
       <h5>Others</h5>
       <div class="clients-list">
+        <img src="assets/img/clients/GitHub.png" class="img-fluid" alt="">
         <img src="assets/img/clients/Git.png" class="img-fluid" alt="">
         <img src="assets/img/clients/linux.png" class="img-fluid" alt="">
         <img src="assets/img/clients/jira.png" class="img-fluid" alt="">
@@ -549,71 +525,78 @@
 </section><!-- End Certifications Section -->
 
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+     <!-- ======= Contact Section ======= -->
+     <section id="contact" class="contact">
       <div class="container">
 
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Rabat, Morocco</p>
-              </div>
-          
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>abjaou.oumaima2002@gmail.com</p>
-              </div>
-          
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+212 642677164</p>
-              </div>
-          
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.426594062971!2d-6.834543084838667!3d33.97159008062904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda769d9b8b7ac59%3A0x3808f6d9f8b7a60a!2sRabat%2C%20Maroc!5e0!3m2!1sfr!2sfr!4v1648613592092!5m2!1sfr!2sfr" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
+          <div class="section-title">
+              <h2>Contact</h2>
           </div>
-          
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Full Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
+          <formid="contact-form" role="form" class="php-email-form">
+
+          <div class="row" data-aos="fade-in">
+
+              <div class="col-lg-5 d-flex align-items-stretch">
+                  <div class="info">
+                      <div class="address">
+                          <i class="bi bi-geo-alt"></i>
+                          <h4>Location:</h4>
+                          <p>Rabat, Morocco</p>
+                      </div>
+
+                      <div class="email">
+                          <i class="bi bi-envelope"></i>
+                          <h4>Email:</h4>
+                          <p>abjaou.oumaima2002@gmail.com</p>
+                      </div>
+
+                      <div class="phone">
+                          <i class="bi bi-phone"></i>
+                          <h4>Call:</h4>
+                          <p>+212 642677164</p>
+                      </div>
+
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.426594062971!2d-6.834543084838667!3d33.97159008062904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda769d9b8b7ac59%3A0x3808f6d9f8b7a60a!2sRabat%2C%20Maroc!5e0!3m2!1sfr!2sfr!4v1648613592092!5m2!1sfr!2sfr" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                  </div>
               </div>
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+
+              <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                  <form id="contact-form" role="form" class="php-email-form">
+                      <div class="row">
+                          <div class="form-group col-md-6">
+                              <label for="name">Full Name</label>
+                              <input type="text" name="name" class="form-control" id="name" required>
+                          </div>
+                          <div class="form-group col-md-6">
+                              <label for="email">Email</label>
+                              <input type="email" class="form-control" name="email" id="email" required>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="subject">Subject</label>
+                          <input type="text" class="form-control" name="subject" id="subject" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="message">Message</label>
+                          <textarea class="form-control" name="message" rows="10" required></textarea>
+                      </div>
+                      <div class="my-3">
+                          <div class="loading" style="display:none;">Loading</div>
+                          <div class="error-message" style="display:none;">There was an error sending your message. Please try again.</div>
+                          <div class="sent-message" style="display:none;">Your message has been sent. Thank you!</div>
+                      </div>
+                      <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
               </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+
           </div>
-          
       </div>
-    </section><!-- End Contact Section -->
+  </section><!-- End Contact Section -->
+
+  <!-- EmailJS and custom JS -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript" src="contact-form.js"></script> <!-- Link to the external JS file -->
+
 
   </main><!-- End #main -->
 
