@@ -1,4 +1,4 @@
-emailjs.init('NIl42PP5MO_-bR2u4'); 
+emailjs.init('USER_ID'); 
 
 (function () {
   "use strict";
@@ -26,7 +26,7 @@ emailjs.init('NIl42PP5MO_-bR2u4');
       };
 
       // Send email via EmailJS
-      emailjs.send('service_3o5y8tz', 'template_t58z8l8', formData)
+      emailjs.send('SERVICE_ID', 'TEMPLATE_ID', formData)
       .then((response) => {
         thisForm.querySelector('.loading').style.display = 'none';
         thisForm.querySelector('.sent-message').style.display = 'block';
