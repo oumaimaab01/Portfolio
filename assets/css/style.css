@@ -1198,11 +1198,27 @@ section {
   transform: scale(1.1);
 }
 
-/* Album */
-.album {
-  text-align: center;
+/* Styles pour les petits écrans (smartphones) */
+@media (max-width: 480px) {
+  .swiper-slide {
+    padding: 0 5px; 
+    box-sizing: border-box;
+    flex-direction: column; 
+  }
+
+  .album .swiper-slide img {
+    max-width: 150px; 
+    margin: 5px; 
+  }
+
+  .swiper-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
+<<<<<<< HEAD
+=======
 .swiper-container {
   width: 100%;
   padding-top: 50px;
@@ -1281,3 +1297,4 @@ section {
   }
 }
 
+>>>>>>> 3225ed60c1f7bdf588e9fa5dbbfa6533163162f0
